@@ -1,8 +1,5 @@
 import { RAGApplicationBuilder, TextLoader } from '@llm-tools/embedjs';
 import { OllamaEmbeddings, Ollama } from '@llm-tools/embedjs-ollama';
-// import { WebLoader } from '@llm-tools/embedjs-loader-web';
-// import { XmlLoader } from '@llm-tools/embedjs-loader-xml';
-//import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
 import { LibSqlStore, LibSqlDb } from '@llm-tools/embedjs-libsql';
 const ollama = 'http://localhost:11434';
 import { createClient } from "@libsql/client";
@@ -10,29 +7,6 @@ const zenodeo = '../zenodeo3/data/db/zenodeo.sqlite';
 const zenodeodb = createClient({
     url: `file:${zenodeo}`
 });
-
-// https://github.com/ashryanbeats/embedjs-rag-web/blob/main/index.js
-// async function loadResources(ragApplication, dataUrls) {
-//     const loaderSummaries = await Promise.all(
-//         dataUrls.map(async (url) => {
-//             console.log(`Adding loader for: ${url}`);
-            
-//             const loaderSummary = await ragApplication.addLoader(
-//                 new XmlLoader({ filePathOrUrl: '/path/to/file.xml' })
-//             );
-    
-//             return loaderSummary;
-//       })
-//     );
-  
-//     console.log(
-//         "\nLoader summaries:\n",
-//         loaderSummaries.map((summary) => JSON.stringify(summary)).join("\n")
-//     );
-  
-//     return loaderSummaries;
-// }
-
 
 async function buildApp() {
     console.log('building app');
