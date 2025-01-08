@@ -5,3 +5,5 @@
 Currently, Zai is using Meta's Llama 3.2 running on Ollama with `nomic-embed-text` embedding model.
 
 Right now there is no publicly available endpoint for Zai, but a [Q&A session transcript](q%26a.md) is available for inspection.
+
+As always, everything is released under a [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
