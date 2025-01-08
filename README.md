@@ -1,4 +1,4 @@
-# Say hi to zai
+# Say hi to Zai
 
 **Zai** is a Q&A retrieval augmented generation (RAG) application for question and answer (Q&A) with a large language model (LLM). Zai uses only completely free and open source technologies that can be installed on any computer without any restrictions.
 
